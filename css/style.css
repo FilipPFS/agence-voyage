@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
 }
 
 :root {
@@ -15,7 +16,10 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
@@ -23,6 +27,47 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.logo-container {
+    padding: 20px 0px;
+}
+
+.logo {
+    width:  60px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    font-size: 14px;
+    margin: 0;
+}
+
+.list-element-one {
+    color: #0065FC;
+}
+
+.list-element-one:before {
+    content: "";
+    display: block;
+    border-top: 2px solid #0065FC;
+    padding-bottom: 10px;
+}
+
+.list-element-two:before {
+    content: "";
+    display: block;
+    padding-bottom: 12px;
 }
 
 a {
