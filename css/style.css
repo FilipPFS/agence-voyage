@@ -51,23 +51,66 @@ body {
     gap: 50px;
     font-size: 14px;
     margin: 0;
+    padding: 0;
 }
 
-.list-element-one {
-    color: #0065FC;
-}
-
-.list-element-one:before {
-    content: "";
-    display: block;
-    border-top: 2px solid #0065FC;
-    padding-bottom: 10px;
-}
-
-.list-element-two:before {
+.list-element:before {
     content: "";
     display: block;
     padding-bottom: 12px;
+}
+
+.list-element:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.informations-text-title {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.informations-text-desc {
+    font-size: 15px;
+}
+
+.informations-form {
+    display: flex;
+}
+
+.informations-form i {
+    color: black;
+    background-color: #F2F2F2;
+    padding: 10px 15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #F2F2F2;
+}
+
+.informations-form input {
+    text-align: center;
+    font-weight: 700;
+    border: 1px solid #F2F2F2;
+}
+
+.informations-form-btn1 {
+    background-color: #0065FC;
+    padding: 0 10px;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #0065FC;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.informations-form-btn2 {
+    display: none;
 }
 
 a {
@@ -208,5 +251,41 @@ a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
+
+    .pageHeader {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pageHeader nav {
+        min-width: 100%;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 0px;
+        min-width: 100%;
+    } 
+
+    .list-element {
+        text-align: center;
+        width: 50%;
+    }
+
+    .list-element:before {
+        display: none;
+    }
+
+    .list-element:after {
+        content: "";
+        display: block;
+    }
+
+    .list-element:hover:after {
+        margin-top: 10px;
+        border-top: 2px solid #0065FC;
+    }
     /* ... */
 }
