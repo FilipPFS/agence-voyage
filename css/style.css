@@ -187,6 +187,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .hebergements-and-populaires section {
@@ -303,7 +304,50 @@ a {
     margin-bottom: 5px;
 }
 
+.activites {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding: 0 25px;
+}
 
+.activites-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.activites-cards a {
+    width: 22%;
+}
+
+.activites-cards h5 {
+    margin: 0;
+}
+
+.activites-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 20px;
+    filter: drop-shadow(0px -3px 15px rgba(0, 0, 0, 0.1));
+    background-color: white;
+}
+
+.activites-card img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.activites-name {
+    padding-left: 20px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
