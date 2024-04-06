@@ -27,37 +27,41 @@
                 </ul>
             </nav>
         </header>
-         <main>
+        <main>
             <div class="informations">
                 <section class="informations-text">
                     <h3 class="informations-text-title">Trouvez votre hébergement pour des vacances de rêve</h3>
                     <span class="informations-text-desc">En plein centre-ville ou en pleine nature</span>
                 </section>
-                <section class="informations-search">
-                    <form class="informations-form">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" placeholder="Nom de la ville" value="Marseille, France" />
-                        <button class="informations-form-btn1">Recherche</button>
-                        <button class="informations-form-btn2"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </section>
+                <form class="informations-form">
+                    <div class="form-location">
+                        <i class="fa-solid fa-location-dot icon-location"></i>
+                    </div>
+                    <input type="text" placeholder="Nom de la ville" value="Marseille, France" />
+                    <button class="informations-form-btn1">Recherche</button>
+                    <button class="informations-form-btn2">
+                        <i class="fa-solid fa-magnifying-glass form-glass"></i>
+                    </button>
+                </form>
                 <section class="informations-filters">
-                    <h4>Filtres</h4>
-                    <div class="informations-filters-item">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <h4>Economique</h4>
-                    </div>
-                    <div class="informations-filters-item">
-                        <i class="fa-solid fa-person"></i>
-                        <h4>Familial</h4>
-                    </div>
-                    <div class="informations-filters-item">
-                        <i class="fa-solid fa-heart"></i>
-                        <h4>Romantique</h4>
-                    </div>
-                    <div class="informations-filters-item">
-                        <i class="fa-solid fa-fire"></i>
-                        <h4>Nos pépites</h4>
+                    <h4 class="filters-title">Filtres</h4>
+                    <div class="filters-block">
+                        <div class="informations-filters-item">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <h4>Economique</h4>
+                        </div>
+                        <div class="informations-filters-item">
+                            <i class="fa-solid fa-person"></i>
+                            <h4>Familial</h4>
+                        </div>
+                        <div class="informations-filters-item">
+                            <i class="fa-solid fa-heart"></i>
+                            <h4>Romantique</h4>
+                        </div>
+                        <div class="informations-filters-item">
+                            <i class="fa-solid fa-fire"></i>
+                            <h4>Nos pépites</h4>
+                        </div>
                     </div>
                 </section>
                 <section class="informations-data">
@@ -66,8 +70,8 @@
                 </section>
             </div>
 
-            <div class="hebergements-and-populaires" id="hebergements">
-                <section class="hebergements">
+            <div class="hebergements-and-populaires">
+                <section class="hebergements" id="hebergements">
                     <div class="hebergements-title">
                         <h2 class="section-title">Hébergements à Marseille</h2>
                     </div>
@@ -276,26 +280,34 @@
                     <a href="#">
                         <div class="activites-card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux Port">
-                            <h5 class="activites-name">Vieux-port</h5>
+                            <div class="activites-text">
+                                <h5 class="activites-name">Vieux-port</h5>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="activites-card">
                             <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort de Pomègues">
-                            <h5 class="activites-name">Fort de Pomègues</h5>
+                            <div class="activites-text">
+                                <h5 class="activites-name">Fort de Pomègues</h5>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="activites-card">
                             <img src="./images/activites/kilyan-sockalingum.jpg"
                                 alt="Image du Parc national des Calanques">
-                            <h5 class="activites-name">Parc national des Calanques</h5>
+                            <div class="activites-text">
+                                <h5 class="activites-name">Parc national des Calanques</h5>
+                            </div>
                         </div>
                     </a>
                     <a href="#">
                         <div class="activites-card">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de Notre-Dame-de-la-Garde">
-                            <h5 class="activites-name">Notre-Dame-de-la-Garde</h5>
+                            <div class="activites-text">
+                                <h5 class="activites-name">Notre-Dame-de-la-Garde</h5>
+                            </div>
                         </div>
                     </a>
                 </section>
