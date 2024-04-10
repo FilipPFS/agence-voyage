@@ -157,6 +157,7 @@ body {
     border: 2px solid #D9D9D9;
     padding: 12px;
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .informations-filters-item:hover {
