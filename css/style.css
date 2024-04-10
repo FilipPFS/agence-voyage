@@ -516,8 +516,6 @@ a {
         margin-top: 10px;
         border-top: 2px solid var(--main-bg-color);
     }
-    
-    .list-element:hover:bottom
 
     .list-element:hover:after {
         border-top: 2px solid var(--main-color);
