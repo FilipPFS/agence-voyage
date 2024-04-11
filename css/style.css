@@ -529,7 +529,7 @@ a {
 
     .informations-form {
         align-self: flex-start;
-        width: 260px;
+        width: 90%;
         position: relative;
         margin-right: 20px;
     }
@@ -660,5 +660,18 @@ a {
     .footer-item {
         width: 70%;
 
+    }
+}
+
+@media (max-width: 350px) {
+
+    .filters-block {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .informations-filters-item {
+        align-self: flex-start;
+        width: 90%;
     }
 }
